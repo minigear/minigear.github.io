@@ -41,7 +41,7 @@ docker build —tag ko\_ubuntu:latest ./
 
 docker run -it  —name ko\_ubutu ko\_ubuntu /bin/bash
 
--> kor\_ubuntu 이미지로 docker  ko\_ubuntu 이름으로 docker 실행하며 bash로 쉘로 로그인 한다
+-> kor\_ubuntu 이미지로 docker  ko\_ubuntu 이름으로 docker 실행하며 bash쉘로 로그인 한다
 
 docker exec -it docker실행이름
 
