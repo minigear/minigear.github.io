@@ -10,14 +10,14 @@ Docker tool 설치
 - docker-machine
 - docker-machine create —driver virtualbox default : docker머신 생성
 - docker-machine ls : 현재 생성된 docker 머신 목록
-- docker-machine ip
-- docker-machine env docker이름
+- docker-machine ip : docker 머신의 ip정보
+- docker-machine env docker이름 : docker 머신의 환경 정보
 - docker images : 현재 로컬에 생성된 이미지 목록
 - eval $(docker-machine env docker이름) : 기본 이미지 세팅 docker데몬에 연결이 안될때
-- docker pull ubuntu
+- docker pull ubuntu : ubuntu 다운 받기
 - docker image repository 검색
 - docker images : 현재 로컬에 있는 이미지 목록
-- docker run -name 이름 ubuntu
+- docker run -name 이름 ubuntu : 생성된 이미지 구동
 - docker rm run된이름 : run되고 있는 이미지 삭제
 - docker run -dit -name 데몬이름 이미지이름
 - docker start 데몬이름 : 데몬 시작
@@ -26,19 +26,21 @@ Docker tool 설치
 - docker ps -a
 - docker stop 이름
 - docker exec -it 이름 /bin/bash
-
+- docker 이미지 생성 파일내용
 ```
 RUN locale-gen ko_KR.UTF-8
 ENV LANG ko_KR.UTF-8
 ENV LANGUAGE ko_KR.UTF-8
 ENV LC_ALL ko_KR.UTF-8
 
-CMD /bin/bash
-```
+CMD /bin/bash    ```
 
 docker build —tag ko\_ubuntu:latest ./
+
 docker run -it  —name ko\_ubutu ko\_ubuntu /bin/bash
+
 -> kor\_ubuntu 이미지로 docker  ko\_ubuntu 이름으로 docker 실행하며 bash로 쉘로 로그인 한다
+
 docker exec -it docker실행이름
 
 Docker 이미지 만들기
