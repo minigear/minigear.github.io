@@ -27,6 +27,7 @@ Docker tool 설치
 - docker stop 이름
 - docker exec -it 이름 /bin/bash
 - docker 이미지 생성 파일내용
+
 ```
 RUN locale-gen ko_KR.UTF-8
 ENV LANG ko_KR.UTF-8
