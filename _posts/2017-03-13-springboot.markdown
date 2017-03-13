@@ -27,12 +27,12 @@ Docker tool 설치
 - docker stop 이름
 - docker exec -it 이름 /bin/bash
 
-'RUN locale-gen ko_KR.UTF-8
+'''RUN locale-gen ko_KR.UTF-8
 ENV LANG ko_KR.UTF-8
 ENV LANGUAGE ko_KR.UTF-8
 ENV LC_ALL ko_KR.UTF-8
 
-CMD /bin/bash'
+CMD /bin/bash'''
 
 docker build —tag ko\_ubuntu:latest ./
 docker run -it  —name ko\_ubutu ko\_ubuntu /bin/bash
