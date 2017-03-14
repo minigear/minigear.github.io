@@ -13,7 +13,7 @@ Docker tool 설치
 - docker-machine ip : docker 머신의 ip정보
 - docker-machine env docker이름 : docker 머신의 환경 정보
 - docker images : 현재 로컬에 생성된 이미지 목록
-- eval $(docker-machine env docker이름) : 기본 이미지 세팅 docker데몬에 연결이 안될때
+- eval $(docker-machine env docker이름) : 기본 이미지 세팅 docker 데몬에 연결이 안될 때
 - docker pull ubuntu : ubuntu 다운 받기
 - docker image repository 검색
 - docker images : 현재 로컬에 있는 이미지 목록
@@ -22,13 +22,18 @@ Docker tool 설치
 - docker run -dit -name 데몬이름 이미지이름
 - docker start 데몬이름 : 데몬 시작
 - docker stop 데몬이름 : 데몬 중지
-
 - docker ps -a
 - docker stop 이름
 - docker exec -it 이름 /bin/bash
-- docker 이미지 생성 파일내용
+- docker 이미지 생성 Dockerfile 파일내용
 
 ```
+FROM ubuntu:latest
+
+RUN apt-get update
+
+RUN apt-get install -y language-pack-ko
+
 RUN locale-gen ko_KR.UTF-8
 ENV LANG ko_KR.UTF-8
 ENV LANGUAGE ko_KR.UTF-8
@@ -37,20 +42,14 @@ ENV LC_ALL ko_KR.UTF-8
 CMD /bin/bash    
 ```
 
-docker build —tag ko\_ubuntu:latest ./
+- docker build —tag ko\_ubuntu:latest ./
 
-docker run -it  —name ko\_ubutu ko\_ubuntu /bin/bash
+- docker run -it  —name ko\_ubutu ko\_ubuntu /bin/bash
 
--> kor\_ubuntu 이미지로 docker  ko\_ubuntu 이름으로 docker 실행하며 bash쉘로 로그인 한다
+ -> kor\_ubuntu 이미지로 docker  ko\_ubuntu 이름으로 docker 실행하고 bash쉘로 로그인 한다
 
-docker exec -it docker실행이름
+- docker exec -it docker실행이름
 
-Docker 이미지 만들기
+##Docker 이미지 만들기
 - locale
 - docker start 이미지 이름
-
-
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
