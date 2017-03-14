@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Java install (ubuntu)"
+title:  "Java 설치 (ubuntu)"
 date:   2017-03-13 14:08:54 +0900
 categories: jekyll update
 ---
