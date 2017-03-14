@@ -4,8 +4,9 @@ title:  "Docker start"
 date:   2017-03-13 14:08:54 +0900
 categories: jekyll update
 ---
-Docker
-Docker tool 설치
+## Docker
+
+### Docker tool 설치
 터미널 접속
 - docker-machine
 - docker-machine create —driver virtualbox default : docker머신 생성
@@ -14,6 +15,8 @@ Docker tool 설치
 - docker-machine env docker이름 : docker 머신의 환경 정보
 - docker images : 현재 로컬에 생성된 이미지 목록
 - eval $(docker-machine env docker이름) : 기본 이미지 세팅 docker 데몬에 연결이 안될 때
+
+### docker에 ubuntu 설치
 - docker pull ubuntu : ubuntu 다운 받기
 - docker image repository 검색
 - docker images : 현재 로컬에 있는 이미지 목록
@@ -25,6 +28,8 @@ Docker tool 설치
 - docker ps -a
 - docker stop 이름
 - docker exec -it 이름 /bin/bash
+
+### docker에 한글팩 ubuntu 설치
 - docker 이미지 생성 Dockerfile 파일내용
 
 ```
@@ -50,6 +55,6 @@ CMD /bin/bash    
 
 - docker exec -it docker실행이름
 
-##Docker 이미지 만들기
+### Docker 이미지 만들기
 - locale
 - docker start 이미지 이름
