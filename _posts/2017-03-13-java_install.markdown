@@ -4,7 +4,7 @@ title:  "Java install (ubuntu)"
 date:   2017-03-13 14:08:54 +0900
 categories: jekyll update
 ---
-Java 설치
+### Java 설치
 - ubuntu 에서 java 자동 설치 : apt-get install java
 - ubuntu 에서 java 수동 설치
 - wget --header "Cookie: oraclelicense=accept-securebackup-cookie" [http://download.oracle.com/otn-pub/java/jdk/8u5-b13/jdk-8u5-linux-x64.tar.gz]

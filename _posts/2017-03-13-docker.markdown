@@ -7,7 +7,7 @@ categories: jekyll update
 ## Docker
 
 ### Docker tool 설치
-터미널 접속
+### docker maichine 생성(터미널 접속)
 - docker-machine
 - docker-machine create —driver virtualbox default : docker머신 생성
 - docker-machine ls : 현재 생성된 docker 머신 목록
@@ -44,7 +44,7 @@ ENV LANG ko_KR.UTF-8
 ENV LANGUAGE ko_KR.UTF-8
 ENV LC_ALL ko_KR.UTF-8
 
-CMD /bin/bash    
+CMD /bin/bash
 ```
 
 - docker build —tag ko\_ubuntu:latest ./
