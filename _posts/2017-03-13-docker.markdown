@@ -7,14 +7,16 @@ categories: jekyll update
 ## Docker
 
 ### Docker tool 설치
-### docker maichine 생성(터미널 접속)
+### docker machine 생성(터미널 접속)
 - docker-machine
-- docker-machine create —driver virtualbox default : docker머신 생성
+- docker-machine create —driver virtualbox 머신이름 : docker머신 생성
+- docker-machine start 머신이름 : docker데몬이 연결이 안될 때 머신 이름으로 시작한다
 - docker-machine ls : 현재 생성된 docker 머신 목록
 - docker-machine ip : docker 머신의 ip정보
 - docker-machine env docker이름 : docker 머신의 환경 정보
-- docker images : 현재 로컬에 생성된 이미지 목록
-- eval $(docker-machine env docker이름) : 기본 이미지 세팅 docker 데몬에 연결이 안될 때
+- docker images : 현재 로컬에 생성된 이미지 목록(docker 데몬이 연결이 되어 있지 않으면 에러가 발생한다)
+- docker-machine env docker이름 실행했을 때 마지막 줄 실행한다
+	- eval $(docker-machine env docker이름) : 기본 이미지 세팅 docker 데몬에 연결이 안될 때
 
 ### docker에 ubuntu 설치
 - docker pull ubuntu : ubuntu 다운 받기

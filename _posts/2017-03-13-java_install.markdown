@@ -17,7 +17,3 @@ categories: jekyll update
 - vim 설치 : apt-get install vim
 - .bash.profile 설정 : JAVA\_HOME =/usr/apps/java
 - source 명령어 : 로그아웃하지 않고도 환경설정 반영됨
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
