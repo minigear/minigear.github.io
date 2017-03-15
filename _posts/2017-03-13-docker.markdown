@@ -2,7 +2,7 @@
 layout: post
 title:  "Docker start"
 date:   2017-03-13 14:08:54 +0900
-categories: jekyll update
+categories: 개발
 ---
 ## Docker
 
@@ -19,17 +19,22 @@ categories: jekyll update
 	> eval $(docker-machine env docker이름)
 
 ### docker에 ubuntu 설치
-- docker pull ubuntu : ubuntu 다운 받기
+- docker search 이미지 검색
+- docker pull ubuntu : ubuntu 이미지 다운 받기
 - docker image repository 검색
 - docker images : 현재 로컬에 있는 이미지 목록
-- docker run -name 이름 ubuntu : 생성된 이미지 구동
-- docker rm run된이름 : run되고 있는 이미지 삭제
-- docker run -dit -name 데몬이름 이미지이름
-- docker start 데몬이름 : 데몬 시작
-- docker stop 데몬이름 : 데몬 중지
-- docker ps -a
-- docker stop 이름
-- docker exec -it 이름 /bin/bash
+- docker run -name 이름 ubuntu : 이미지로 컨테이너 생성하기
+- docker rm run된이름 : run되고 있는 컨테이너 삭제
+- docker run -dit -name 컨테이너이름 이미지이름
+- docker start 컨테이너 이름 : 컨테이너 시작
+- docker stop 컨테이너 이름 : 컨테이너 중지
+- docker restart 컨테이너 이름 : 컨테이너 재시작
+- docker attach 컨테이너 이름 : 시작된 컨테이너에 접속
+  - 컨테이너 접속 시 bash 상태에서 exit나 ctrl+D를 하게되면 컨테이너 정지
+  - ctrl+P, ctrl+Q를 차례대로 누르면 컨테이너가 정지되지 않고 빠져나옴
+- docker ps -a : 컨테이너 목록 확인
+- docker stop 컨테이너이름 : 컨테이너 정지
+- docker exec -it 컨테이너이름 /bin/bash : 외부에서 컨테이너 안으로 명령어 실행하기
 
 ### docker에 한글팩 ubuntu 설치
 - docker 이미지 생성 Dockerfile 파일내용
@@ -51,12 +56,64 @@ CMD /bin/bash
 
 - docker build —tag ko\_ubuntu:latest ./
 
-- docker run -it  —name ko\_ubutu ko\_ubuntu /bin/bash
+- docker run -it  -—name ko\_ubutu ko\_ubuntu /bin/bash
 
  -> kor\_ubuntu 이미지로 docker  ko\_ubuntu 이름으로 docker 실행하고 bash쉘로 로그인 한다
 
 - docker exec -it docker실행이름
 
 ### Docker 이미지 만들기
+
+- docker hub(web) 나 docker search 명령어를 통해 image를 검색
+- Dockerfile을 통해 이미지를 만들수 있다
+  - 아래 예제 같이 설치해야 하는 작업들을 작성한다
+
+```
+FROM podbox/java8
+RUN apt-get update
+
+RUN apt-get install  -y language-pack-ko
+
+# set locale ko_KR
+RUN locale-gen ko_KR.UTF-8
+
+ENV LANG ko_KR.UTF-8
+ENV LANGUAGE ko_KR.UTF-8
+ENV LC_ALL ko_KR.UTF-8
+
+RUN apt-get install -y \
+ vim \
+ git
+
+CMD /bin/bash
+```
+- docker ps -a : 현재 떠있는 컨테이너 목록
+- docker stop $(docker ps -a -q) : 실행 중인 모든 컨테이너 중지
 - locale
 - docker start 이미지 이름
+- docker build -t ko_java8 .
+
+### docker에 서비스 배포하기
+- git 과 java 가 설치된 컨테이너를 실행한다
+ > docker run -dit --name 컨테이너이름 -p docker_port : service_port 이미지이름
+
+- git 에서 로컬로 클론한다
+
+ ```
+ git clone github_url
+ ```
+- 클론한 directory로 이동
+- git branch -a 실행
+- git에서 배포하고자 하는 branch로 변경
+
+```
+git checkout -b  로컬branch이름  origin/원격branch이름
+git branch -a
+git branch -vv
+```
+- 빌드한다
+ > maven 일 때 : mvnw clean package
+ > gradle 일 때 : gradlew build
+
+- 해당 빌드한 jar파일 실행 : java -jar 실행jar파일
+- docker inspect 컨테이너이름 : 컨테이너 상세정보
