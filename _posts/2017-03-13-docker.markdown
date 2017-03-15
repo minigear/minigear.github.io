@@ -16,7 +16,9 @@ categories: 개발
 - docker-machine env docker이름 : docker 머신의 환경 정보
 - docker images : 현재 로컬에 생성된 이미지 목록(docker 데몬이 연결이 되어 있지 않으면 에러가 발생한다)
 - docker-machine env docker이름 실행했을 때의 마지막 줄 실행
-	> eval $(docker-machine env docker이름)
+	```
+  eval $(docker-machine env docker이름)
+  ```
 
 ### docker에 ubuntu 설치
 - docker search 이미지 검색
@@ -95,7 +97,9 @@ CMD /bin/bash
 
 ### docker에 서비스 배포하기
 - git 과 java 가 설치된 컨테이너를 실행한다
- > docker run -dit --name 컨테이너이름 -p docker_port : service_port 이미지이름
+```
+ docker run -dit --name 컨테이너이름 -p docker_port : service_port 이미지이름
+```
 
 - git 에서 로컬로 클론한다
 
@@ -112,8 +116,8 @@ git branch -a
 git branch -vv
 ```
 - 빌드한다
- > maven 일 때 : mvnw clean package
- > gradle 일 때 : gradlew build
+ - maven 일 때 : mvnw clean package
+ - gradle 일 때 : gradlew build
 
 - 해당 빌드한 jar파일 실행 : java -jar 실행jar파일
 - docker inspect 컨테이너이름 : 컨테이너 상세정보
