@@ -1,3 +1,9 @@
+---
+layout: post
+title:  "의존관계"
+date:   2017-04-26 17:03:00 +0900
+categories: Design pattern
+---
 Dependency + Injection + Framework
 
 **1. Dependency ( Dependency relationship)**
@@ -8,7 +14,7 @@ Dependency + Injection + Framework
 - supplier가 client의 local 변수
 - supplier로 메시지를 보냄
 
- 의존관계가 생기면 supplier에 변경이 발생하였을 때 client에 영향받게 되므로 client의 재사용이 어려워 진다.
+ 의존관계가 생기면 supplier에 변경이 발생하였을 때 client에 영향 받게 되므로 client의 재사용이 어려워 진다.
 
 ***재사용 가능한(reusable) 객체지향 설계/개발***
 - client는 재사용이 어렵다.
