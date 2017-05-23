@@ -16,9 +16,7 @@
 title: minigear
 email: coosac@gmail.com
 description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  '어떤 일을 아주 잘하려면 능력 이상으로 노력해야 한다'는 사실을 깨닫고, '타고난 재능이 없는 일도 거듭하다보면 제2의 천성처럼 된다'는 점을 인식하게 되며, 마지막으로 그 정도로 열심히 하는 능력은 '하루아침에 생기지 않는다'는 현실을 배우게 된다.
 baseurl: "/minigear.github.io" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  minigear
