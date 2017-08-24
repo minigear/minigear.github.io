@@ -1,33 +1,66 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# Site Info
+title: '개발자 기록'
+tagline: '개발자 기록'
+description: '보다 나은 개발자가 되기 위한 기록'
+baseurl: ""
+url: http://minigear.github.io
+logo: '/public/logo.jpg'
 
-# Site settings
-# These are used to personalize your new site. If you look in the HTML files,
-# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
-# You can create any custom variable you would like, and they will be accessible
-# in the templates via {{ site.myvariable }}.
-title: minigear
-email: coosac@gmail.com
-description: > # this means to ignore newlines until "baseurl:"
-  '어떤 일을 아주 잘하려면 능력 이상으로 노력해야 한다'는 사실을 깨닫고, '타고난 재능이 없는 일도 거듭하다보면 제2의 천성처럼 된다'는 점을 인식하게 되며, 마지막으로 그 정도로 열심히 하는 능력은 '하루아침에 생기지 않는다'는 현실을 배우게 된다.
-baseurl: "/minigear.github.io" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  minigear
-
-#paginate: 5
-
-# Build settings
-markdown: kramdown
-theme: minima
+# Site configurations
 gems:
-  - jekyll-feed
-exclude:
-  - Gemfile
-  - Gemfile.lock
+  - jekyll-paginate
+markdown: kramdown
+kramdown:
+  input: GFM
+excerpt_separator: "<!-- more -->"
+sass:
+  style: compressed
+  sass_dir: _scss
+paginate: 5
+paginate_path: '/blog/page:num'
+permalink: pretty
+
+version: 1.0.0
+
+# About/contact
+author:
+  name: Minigear
+  description: A passionate <strong>developer and researcher</strong>, learning to be a giant.
+  contact:
+    # linkedin:  https://www.linkedin.com/in/joongho-kim-282976111/
+    github:    https://github.com/minigear
+    # facebook:  <hide>
+    # twitter:
+    email: mailto:coosac@gmail.com
+
+# Navigation (2nd level links supported)
+nav:
+  Home:
+    - '/'
+  Blog:
+    - '/blog/'
+  Categories:
+    - '/'
+    # - { Categories All: '/blog/categories/' }
+    - { TIL (Today I Learned): '/blog/categories/#TIL' }
+    - { Design pattern: '/blog/categories/#Design pattern'}
+    - { etc: '/blog/categories/#etc' }
+#    - { Categories: '/blog/categories/' }
+#    - { Tags: '/blog/tags/' }
+  About:
+    - '/about/'
+#  Github Project:
+#    - 'http://minigear.github.io/'
+
+# Where are tags and categories displayed
+tag_page: '/blog/tags/'
+category_page: '/blog/categories/'
+
+hero:
+  image: /public/img/we_will_be_giants_by_yalestewart.jpg
+  caption: Original Artwork &copy; <a href="http://yalestewart.deviantart.com/art/We-Will-Be-Giants-370176475">Yale Stewart</a>
+
+# Puglins
+mathjax: true # whether support mathjax
+google_analytics_token: 'UA-00000000-1' # leave blank if you don't want google analytics
+disqus_short_name: 'your_short_name' # leave blank if you don't want disqus
