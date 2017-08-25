@@ -8,7 +8,7 @@ tags: [스프링, spring]
 comments: true
 ---
 
- ## 오브젝트와 의존관계
+## 오브젝트와 의존관계
   - 초난감 DAO
     - Extract method
   - DAO 의 분리
