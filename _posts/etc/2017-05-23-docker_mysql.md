@@ -3,6 +3,7 @@ layout: post
 title:  "Docker mysql 설치"
 date:   2017-05-23 13:16:54 +0900
 categories: etc
+permalink: /etc/:year/:month/:day/:title/
 tags: [도커, Docker, mysql]
 comments: true
 ---

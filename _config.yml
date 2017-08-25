@@ -1,5 +1,5 @@
 # Site Info
-title: '개발자 기록'
+title: 'Minigear'
 tagline: '개발자 기록'
 description: '보다 나은 개발자가 되기 위한 기록'
 baseurl: ""
@@ -42,11 +42,15 @@ nav:
   Categories:
     - '/'
     # - { Categories All: '/blog/categories/' }
-    - { TIL (Today I Learned): '/blog/categories/#TIL' }
+    - { TIL (Today I Learned): '/blog/categories/#til' }
     - { Design pattern: '/blog/categories/#Design pattern'}
     - { etc: '/blog/categories/#etc' }
 #    - { Categories: '/blog/categories/' }
 #    - { Tags: '/blog/tags/' }
+
+  Tags:
+    - '/blog/tags/'
+
   About:
     - '/about/'
 #  Github Project:

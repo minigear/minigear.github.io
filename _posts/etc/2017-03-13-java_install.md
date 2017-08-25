@@ -3,6 +3,7 @@ layout: post
 title:  "Java 설치 (ubuntu)"
 date:   2017-03-13 14:08:54 +0900
 categories: etc
+permalink: /etc/:year/:month/:day/:title/
 tags: [도커, Docker, JAVA]
 comments: true
 ---

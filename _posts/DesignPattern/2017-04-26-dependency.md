@@ -3,6 +3,7 @@ layout: post
 title:  "의존관계"
 date:   2017-04-26 17:03:00 +0900
 categories: [Design pattern]
+permalink: /designpattern/:year/:month/:day/:title/
 tags: [Design pattern]
 comments: true
 ---
