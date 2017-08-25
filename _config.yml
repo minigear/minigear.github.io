@@ -43,7 +43,7 @@ nav:
     - '/'
     # - { Categories All: '/blog/categories/' }
     - { TIL (Today I Learned): '/blog/categories/#til' }
-    - { Design pattern: '/blog/categories/#Design pattern'}
+    - { Dev: '/blog/categories/#dev'}
     - { Java: '/blog/categories/#java' }
     - { Spring: '/blog/categories/#spring' }
     - { etc: '/blog/categories/#etc' }
