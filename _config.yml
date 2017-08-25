@@ -44,6 +44,8 @@ nav:
     # - { Categories All: '/blog/categories/' }
     - { TIL (Today I Learned): '/blog/categories/#til' }
     - { Design pattern: '/blog/categories/#Design pattern'}
+    - { Java: '/blog/categories/#java' }
+    - { Spring: '/blog/categories/#spring' }
     - { etc: '/blog/categories/#etc' }
 #    - { Categories: '/blog/categories/' }
 #    - { Tags: '/blog/tags/' }
