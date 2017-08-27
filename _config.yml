@@ -55,6 +55,9 @@ nav:
 
   About:
     - '/about/'
+
+  Search:
+    - '/search/'
 #  Github Project:
 #    - 'http://minigear.github.io/'
 

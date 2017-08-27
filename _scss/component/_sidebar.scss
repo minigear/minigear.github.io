@@ -42,7 +42,7 @@
 }
 @media (min-width: 30em) {
   .sidebar {
-    font-size: .75rem; /* 14px */
+    font-size: .8rem; /* 14px */
   }
 }
 
@@ -103,7 +103,7 @@ a.sidebar-nav-item:focus {
 /* Style the `label` that we use to target the `.sidebar-checkbox` */
 .sidebar-toggle {
   position: absolute;
-  top:  .8rem;
+  top:  1.1rem;
   @if $reverse-layout {
     left: auto;
     right: 1rem;
@@ -141,10 +141,11 @@ a.sidebar-nav-item:focus {
 }
 
 @media (min-width: 30.1em) {
-  .sidebar-toggle {
+  .sidebar-toggle, .search {
     position: fixed;
   }
 }
+
 
 @media print {
   .sidebar-toggle {
@@ -210,4 +211,8 @@ a.sidebar-nav-item:focus {
       text-decoration: none;
     }
   }
+}
+
+.notice{
+    font-size: 0.6rem !important;
 }
