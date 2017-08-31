@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Jekyll 테마 변경"
+title:  "2017-08-25_TIL"
 date:   2017-08-25 12:36:00 +0900
 categories: [TIL (Today I Learned)]
 permalink: /til/:year/:month/:day/:title/
