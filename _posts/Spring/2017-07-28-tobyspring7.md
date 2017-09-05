@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Toby 스프링3 7장"
-date:   2017-08-28 13:36:00 +0900
+date:   2017-09-05 13:36:00 +0900
 categories: [Spring]
 permalink: /spring/:year/:month/:day/:title/
 tags: [스프링, spring, Resource, interface, annotation]
