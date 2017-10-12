@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Toby 스프링3 4장 예외"
+title:  "Toby 스프링3 1부 4장 예외"
 date:   2017-09-19 12:36:00 +0900
 categories: [Spring]
 permalink: /spring/:year/:month/:day/:title/

@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Toby 스프링3 8장"
+title:  "Toby 스프링3 1부 8장"
 date:   2017-09-18 15:00:00 +0900
 categories: [Spring]
 permalink: /spring/:year/:month/:day/:title/

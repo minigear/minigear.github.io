@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Toby 스프링3 2장 테스트"
+title:  "Toby 스프링3 1부 2장 테스트"
 date:   2017-08-25 12:36:00 +0900
 categories: [Spring]
 permalink: /spring/:year/:month/:day/:title/
