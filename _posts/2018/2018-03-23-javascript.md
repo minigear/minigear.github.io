@@ -188,9 +188,9 @@ API : Application Programming Interface
 
 - 캡처 : 그룹을 지정하고 그룹을 가져와 사용하는 것을 캡쳐라 한다.
 ``` javascript
-var pattern = /(\w+)\s(\w+)/;
-var str = "coding everybody";
-var result = str.replace(pattern, "$2, $1");
+  var pattern = /(\w+)\s(\w+)/;
+  var str = "coding everybody";
+  var result = str.replace(pattern, "$2, $1");
 ```
 
 - 치환
