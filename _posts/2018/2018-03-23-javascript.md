@@ -32,22 +32,22 @@ typeof 객체 : 데이터 타입  왜 데이터 타입을 숫자와 문자로만
 
 ## 조건문  
 비교 연산자  
-==  :  동등 연산자 타입이 아닌 의미하는 값이 같다면 같다고 취급한다
+==  :  동등 연산자 타입이 아닌 의미하는 값이 같다면 같다고 취급한다  
 === :  일치 연산자 데이터 타입까지 엄격히 검사한다  
 
 prompt : 입력창을 띄움 브라우저 환경  
 
 논리연산자  
-- && : AND
-- || : OR
+- && : AND  
+- \|\| : OR
 
 
 boolean 대체제  
-'' : 빈문자열은 false  
-0 : false  
-undefined : false  
-null : false  
-NaN : false  
+- '' : 빈문자열은 false  
+- 0 : false  
+- undefined : false  
+- null : false  
+- NaN : false  
 
 ## 반복문(loop / iterate)
 - while : 조건문이 false가 될때까지 반복
@@ -78,11 +78,10 @@ function 함수명() {
 }
 ```
 
-입력과 출력 :
-argument와 parameter의 차이점은 ?
-매개변수 : parameter
-인자 : argument 전달되는 값 자체
-
+입력과 출력 :    
+argument와 parameter의 차이점은 ?   
+   - 매개변수 : parameter    
+   - 인자 : argument 전달되는 값 자체    
 
 익명 함수 : 정의와 호출을 같이 한다. 일회성 호출을 위해서 사용한다.   
 ``` javascript
