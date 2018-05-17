@@ -2,9 +2,9 @@
 layout: "post"
 title: "react-native"
 date:   "2018-05-03 13:55"
-categories: []
+categories: [TIL (Today I Learned)]
 permalink: /2018/:year/:month/:day/:title/
-tags: []
+tags: [javascript]
 comments: true
 ---
 https://facebook.github.io/react-native/docs/getting-started.html
