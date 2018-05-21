@@ -7,6 +7,15 @@ permalink: /2018/:year/:month/:day/:title/
 tags: [javascript]
 comments: true
 ---
+
+react-native: 결국 javascript로 작성한 코드를 ios용으로 object-c android용으로 java파일로
+변환된다 이러한 작업을 react-native가 해준다  
+
+react-native 장점  
+- 화면을 css를 통해서 꾸밀 수 있다  
+- 하나의 코드로 ios와 android 앱을 만들 수 있다. 단 OS별 차이점은 존재한다  
+- 구동원리는 react와 동일하다, 하지만 더 엄격하다 
+
 https://facebook.github.io/react-native/docs/getting-started.html
 
 1. react native cli 설치  
