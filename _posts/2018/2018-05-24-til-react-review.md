@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "TIL react review"
+title: "TIL react review 2018-05-24"
 date:   "2018-05-24 15:59"
 categories: [TIL (Today I Learned)]
 permalink: /2018/:year/:month/:day/:title/
