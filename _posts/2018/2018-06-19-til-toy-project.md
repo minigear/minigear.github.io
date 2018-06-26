@@ -1,6 +1,6 @@
 ---
 layout: "post"
-title: "TIL 토이프로젝트"
+title: "TIL 토이프로젝트 - 목적"
 date:   "2018-06-19 14:01"
 categories: [TIL (Today I Learned)]
 permalink: /2018/:year/:month/:day/:title/
