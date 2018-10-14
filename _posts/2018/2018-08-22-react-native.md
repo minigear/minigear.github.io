@@ -20,7 +20,8 @@ comments: true
  
 ### 3. 해결   
  - [참고 권한주는 방법](https://stackoverflow.com/questions/45940861/android-8-cleartext-http-traffic-not-permitted)
- -  AndroidManifest.xml파일 수정  
+ -  AndroidManifest.xml파일 수정   
+ 
  ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <manifest ...>
@@ -34,7 +35,7 @@ comments: true
 </manifest>
 ```
  
- #### 4. 기타 팁  
+#### 4. 기타 팁  
  현재 열여있는 port를 구동하는 프로세스 찾기  
 
 sudo lsof -i :8081
