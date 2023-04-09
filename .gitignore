@@ -1,10 +1,5 @@
-_site
+*.gem
+.bundle
+.jekyll-cache
 .sass-cache
-.jekyll-metadata
-_mdriter.cson
-.idea/minigear.github.io.iml
-.idea/modules.xml
-.idea/workspace.xml
-.jekyll-cache/
-Gemfile
-Gemfile.lock
+_site
