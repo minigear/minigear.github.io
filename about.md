@@ -1,8 +1,8 @@
 ---
-layout: post
+layout: page
 title: About
 ---
 
-This is an example page!
-
-Actually, it has the same layout of a post...
+<p class="message">
+  어제 보다 나은 나를 위한 블로그
+</p>
