@@ -46,7 +46,7 @@ nav:
     - { Dev: '/blog/categories/#dev'}
     - { Java: '/blog/categories/#java' }
     - { Spring: '/blog/categories/#spring' }
-    - { 독서: '/blog/categories/#read' }
+    - { 독서: '/blog/categories/#독서' }
     - { etc: '/blog/categories/#etc' }
 
   Tags:
