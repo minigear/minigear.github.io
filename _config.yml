@@ -42,7 +42,7 @@ nav:
   Categories:
     - '/'
     # - { Categories All: '/blog/categories/' }
-    - { TIL (Today I Learned): '/blog/categories/#TIL (Today I Learned)' }
+    - { TIL (Today I Learned): '/blog/categories/#`TIL (Today I Learned)`' }
     - { Dev: '/blog/categories/#dev'}
     - { Java: '/blog/categories/#java' }
     - { Spring: '/blog/categories/#spring' }
